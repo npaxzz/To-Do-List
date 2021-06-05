@@ -22,4 +22,26 @@ function addItem() {
   const button = document.createElement("button");
 
   li.innerHTML = input.value;
+  button.innerHTML = "Remove";
+  div.appendChild(li);
+  div.appendChild(button);
+  toDo.appendChild(div);
+  //   The appendChild() method appends a node as the last child of a node.
+
+  // This removes the input text when you add an Item.
+  if (input.value === li.innerHTML) {
+    input.value = "";
+  }
+
+  //Removing the list.
+  button.addEventListener("click", () => {
+    div.remove();
+  });
 }
+
+// Adding the Item to the list by pressing the Enter key.
+input.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    addItem();
+  }
+});
