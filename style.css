@@ -26,3 +26,20 @@ h1 {
   font-weight: bold;
   font-size: 25px;
 }
+
+.content input[type="text"] {
+  width: 280px;
+  height: 45px;
+  padding-left: 20px;
+  font-size: 17px;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.2s ease;
+  /* transition: เวลาในการตอบสนอง 0.2s */
+  border: 1px solid black;
+  /* border: เส้นขอบของกรอบ 1px สีดำ */
+}
+
+input[type="text"]:focus {
+  border: 2px solid rgb(138, 26, 26);
+}
