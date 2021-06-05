@@ -17,3 +17,12 @@ h1 {
   font-weight: 900;
   padding-top: 50px;
 }
+
+.content {
+  padding-top: 50px;
+}
+
+.content label {
+  font-weight: bold;
+  font-size: 25px;
+}
