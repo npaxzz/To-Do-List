@@ -39,3 +39,10 @@ function addItem() {
     div.remove();
   });
 }
+
+// Adding the Item to the list by pressing the Enter key.
+input.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    addItem();
+  }
+});
