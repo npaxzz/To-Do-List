@@ -7,6 +7,7 @@ function addItem() {
     e.preventDefault();
     // preventDefault() จะยกเลิกเหตุการณ์
   }
+
   //   ถ้าไม่ใส่ข้อความ ให้ alert และ  stopAdding()
   //   ===	equal value and equal type
   if (input.value.length === 0) {
@@ -38,10 +39,3 @@ function addItem() {
     div.remove();
   });
 }
-
-// Adding the Item to the list by pressing the Enter key.
-input.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    addItem();
-  }
-});
