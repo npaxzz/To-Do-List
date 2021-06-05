@@ -59,3 +59,40 @@ button {
   font-weight: bold;
   color: white;
 }
+
+.to-do {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  /* column => directionจากบนลงล่าง */
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.to-do div {
+  display: flex;
+  max-width: 320px;
+  height: 40px;
+  margin: 15px 80px;
+  align-items: center;
+}
+
+.to-do div > li {
+  margin: 15px 20px;
+  list-style: none;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.to-do button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 9px 13px;
+  border-radius: 25px;
+  background: rgb(138, 26, 26);
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
