@@ -34,6 +34,7 @@ h1 {
   font-size: 17px;
   border-radius: 25px;
   outline: none;
+  /* outline: ไม่มีเส้นกรอบ */
   transition: 0.2s ease;
   /* transition: เวลาในการตอบสนอง 0.2s */
   border: 1px solid black;
@@ -42,4 +43,18 @@ h1 {
 
 input[type="text"]:focus {
   border: 2px solid rgb(138, 26, 26);
+}
+
+button {
+  cursor: pointer;
+  /* cursor: pointer เวลาเมาส์ไว้ชี้ที่ button จะขึ้นเป็นรูปมือชี้ */
+  border: none;
+  outline: none;
+  padding: 13px 29px;
+  border-radius: 25px;
+  background: rgb(138, 26, 26);
+  margin: 0 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
 }
